@@ -17,8 +17,10 @@ result2 = nextCmd(SnmpEngine(),
 
 r=list(result)
 r2=list(result2)
-for x in r[0][3]:
-	for y in r2[0][3]:
-		print(x)
-		print(y)
 
+for x in r[0][3]:
+	print(x)
+
+for y in r2:
+	for z in y[3]:
+		print(z)
